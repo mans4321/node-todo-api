@@ -94,7 +94,7 @@ describe("GET /todos/:id", () => {
       .end(done);
   });
 
-  it("should return 404 when id isn't correct", done => {
+  it("should return 404 when id isn't correct.", done => {
     var id = "5c218c0644fad33d14d3e11b";
     request(app)
       .get(`/todos/${id}`)
